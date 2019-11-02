@@ -1,0 +1,13 @@
+{
+"companyName": "My Games",
+"productName": "Shooting Star",
+"dataUrl": "Shooting Star.data.unityweb",
+"wasmCodeUrl": "Shooting Star.wasm.code.unityweb",
+"wasmFrameworkUrl": "Shooting Star.wasm.framework.unityweb",
+"TOTAL_MEMORY": 268435456,
+"graphicsAPI": ["WebGL 2.0", "WebGL 1.0"],
+"webglContextAttributes": {"preserveDrawingBuffer": false},
+"splashScreenStyle": "Dark",
+"backgroundColor": "#2C60B1",
+"cacheControl": {"default": "must-revalidate"}
+}

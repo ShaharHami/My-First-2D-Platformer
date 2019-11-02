@@ -1,0 +1,155 @@
+%YAML 1.1
+%TAG !u! tag:unity3d.com,2011:
+--- !u!1 &1470316020831659503
+GameObject:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  serializedVersion: 6
+  m_Component:
+  - component: {fileID: 1470316020831659501}
+  - component: {fileID: 1470316020831659500}
+  - component: {fileID: 1470316020831659502}
+  - component: {fileID: 1470316020831659498}
+  - component: {fileID: 1470316020831659497}
+  m_Layer: 0
+  m_Name: _GM-2
+  m_TagString: Untagged
+  m_Icon: {fileID: 0}
+  m_NavMeshLayer: 0
+  m_StaticEditorFlags: 0
+  m_IsActive: 1
+--- !u!4 &1470316020831659501
+Transform:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1470316020831659503}
+  m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
+  m_LocalPosition: {x: 0, y: 0, z: 0}
+  m_LocalScale: {x: 1, y: 1, z: 1}
+  m_Children:
+  - {fileID: 1470316022199945119}
+  m_Father: {fileID: 0}
+  m_RootOrder: 0
+  m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
+--- !u!114 &1470316020831659500
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1470316020831659503}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: acb139b5bf7d0478abeeedfded9068fa, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  backgrounds:
+  - {fileID: 0}
+  - {fileID: 0}
+  - {fileID: 0}
+  smoothing: 1.8
+--- !u!114 &1470316020831659502
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1470316020831659503}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 698fc4a2c27824d4daed7416a565c1b9, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  maxLives: 2
+  startingMoney: 100
+  playerPrefab: {fileID: 4375517438260593226, guid: 612941fae44ba47d1ab891cc7632ef1a,
+    type: 3}
+  spawnPoint: {fileID: 1470316022199945119}
+  spawnDelay: 3
+  spawnPrefab: {fileID: 8835904748360599666, guid: 114b8ba4221004d23b95daf45bde48aa,
+    type: 3}
+  respawnCoundownSound: Respawn Countdown
+  spawnSound: Spawn
+  cameraShake: {fileID: 1470316020831659498}
+  gameOverUI: {fileID: 6252123729382006268, guid: 482837aed511349ec8251e00e86da8ae,
+    type: 3}
+  upgradeMenu: {fileID: 0}
+  levelBGM: LevelBGM
+  gameOverSound: Game Over
+--- !u!114 &1470316020831659498
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1470316020831659503}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: f8e1848562f34452dbacab76adc95303, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  mainCam: {fileID: 0}
+--- !u!114 &1470316020831659497
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1470316020831659503}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 91547e3ba1d3346708baaeb4c72c10a1, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  spawnPoints:
+  - {fileID: 0}
+  - {fileID: 0}
+  - {fileID: 0}
+  waves:
+  - name: Easy Wave
+    enemy: {fileID: 1222538102970153195, guid: 3a516759b28064e98ba52225064c0ba8, type: 3}
+    count: 2
+    rate: 1
+  - name: Normal Wave
+    enemy: {fileID: 1222538102970153195, guid: 3a516759b28064e98ba52225064c0ba8, type: 3}
+    count: 3
+    rate: 1.5
+  - name: Hard Wave
+    enemy: {fileID: 1222538102970153195, guid: 3a516759b28064e98ba52225064c0ba8, type: 3}
+    count: 5
+    rate: 2
+  waveInterval: 5
+--- !u!1 &1470316022199945120
+GameObject:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  serializedVersion: 6
+  m_Component:
+  - component: {fileID: 1470316022199945119}
+  m_Layer: 0
+  m_Name: SpawnPoint
+  m_TagString: Untagged
+  m_Icon: {fileID: 5721338939258241955, guid: 0000000000000000d000000000000000, type: 0}
+  m_NavMeshLayer: 0
+  m_StaticEditorFlags: 0
+  m_IsActive: 1
+--- !u!4 &1470316022199945119
+Transform:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1470316022199945120}
+  m_LocalRotation: {x: -0, y: -0, z: -0, w: 1}
+  m_LocalPosition: {x: -0.37, y: 0.9, z: 0}
+  m_LocalScale: {x: 1, y: 1, z: 1}
+  m_Children: []
+  m_Father: {fileID: 1470316020831659501}
+  m_RootOrder: 0
+  m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
